@@ -18,6 +18,10 @@ https://trello.com/b/dCQrVbS1/to-do-lists
 ###User Stories
 https://trello.com/b/fWmEysfk/user-stories
 
+##Ruby version
+
+- Ruby 2.3.0
+- Rails 4.2.6
 
 ##Added Gems
 

@@ -11,3 +11,6 @@
 #   stripe_publishable_key: pk_live_9lcthxpSIHbGwmdO941O1XVU
 
 GOOGLE_MAPS_API: "AIzaSyA2HtFJW9Zx0fXsuX3eiFEpuK36ATkfK1k"
+
+PUBLISHABLE_KEY: "pk_test_4cYaFxyItOJOt1LjYHnnIizq"
+SECRET_KEY: "sk_test_tdoJufDFEQWtlFZY27m40TOg"
