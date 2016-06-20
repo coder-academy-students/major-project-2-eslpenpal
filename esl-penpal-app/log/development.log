@@ -12275,3 +12275,672 @@ Processing by ProfilesController#index as HTML
   Rendered profiles/index.html.erb within layouts/application (5.1ms)
   Rendered layouts/_navbar.html.erb (0.1ms)
 Completed 200 OK in 68ms (Views: 65.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/profiles/15" for ::1 at 2016-06-20 18:19:37 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mUser Load (3.0ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (2.2ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = $1 LIMIT 1[0m  [["id", 15]]
+  Rendered profiles/show.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 1275ms (Views: 1151.3ms | ActiveRecord: 20.9ms)
+
+
+Started GET "/profiles" for ::1 at 2016-06-20 18:19:41 +1000
+Processing by ProfilesController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (0.5ms)[0m  [1mSELECT "profiles".* FROM "profiles"[0m
+  Rendered profiles/index.html.erb within layouts/application (5.7ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 93ms (Views: 89.8ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/home/index" for ::1 at 2016-06-20 18:25:54 +1000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.5ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 119ms (Views: 115.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/profiles" for ::1 at 2016-06-20 18:26:03 +1000
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mProfile Load (0.6ms)[0m  SELECT "profiles".* FROM "profiles"
+  Rendered profiles/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 121ms (Views: 117.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/home/index" for ::1 at 2016-06-20 18:26:07 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+Completed 200 OK in 75ms (Views: 72.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/profiles" for ::1 at 2016-06-20 18:40:17 +1000
+  [1m[36mActiveRecord::SchemaMigration Load (1.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by ProfilesController#index as HTML
+  [1m[35mUser Load (2.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (2.6ms)[0m  [1mSELECT "profiles".* FROM "profiles"[0m
+  Rendered profiles/index.html.erb within layouts/application (20.8ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 1132ms (Views: 1031.4ms | ActiveRecord: 16.2ms)
+
+
+Started GET "/profiles/1" for ::1 at 2016-06-20 18:40:22 +1000
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (0.4ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered profiles/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+Completed 200 OK in 94ms (Views: 85.2ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/profiles" for ::1 at 2016-06-20 18:40:24 +1000
+Processing by ProfilesController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (0.4ms)[0m  [1mSELECT "profiles".* FROM "profiles"[0m
+  Rendered profiles/index.html.erb within layouts/application (4.7ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+Completed 200 OK in 76ms (Views: 71.9ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/profiles/1/edit" for ::1 at 2016-06-20 18:40:27 +1000
+Processing by ProfilesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (0.4ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = $1 LIMIT 1[0m  [["id", 1]]
+  Rendered profiles/_form.html.erb (317.4ms)
+  Rendered profiles/edit.html.erb within layouts/application (321.9ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 425ms (Views: 421.4ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/profiles" for ::1 at 2016-06-20 18:40:31 +1000
+Processing by ProfilesController#index as HTML
+  [1m[35mUser Load (0.5ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (0.6ms)[0m  [1mSELECT "profiles".* FROM "profiles"[0m
+  Rendered profiles/index.html.erb within layouts/application (5.9ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 72ms (Views: 69.0ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/searches" for ::1 at 2016-06-20 18:40:37 +1000
+Processing by SearchesController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (0.5ms)[0m  [1mSELECT "profiles".* FROM "profiles"[0m
+  Rendered searches/index.html.erb within layouts/application (5.0ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 69ms (Views: 65.1ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/searches?method=GET" for ::1 at 2016-06-20 18:40:47 +1000
+Processing by SearchesController#index as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"o5N2bdcGHMD4mUCDPOxbjstFZysBubG9upQX+btveCxCDXnUtShCIC+h2B3pvtfKtkLcI5cZRKn9xwQ9YVvFRQ==", "search"=>"japanese", "commit"=>"Search", "method"=>"GET"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (0.9ms)[0m  [1mSELECT "profiles".* FROM "profiles" WHERE (lower(language) LIKE '%japanese')[0m
+  Rendered searches/index.html.erb within layouts/application (3.6ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 67ms (Views: 62.9ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/profiles/15" for ::1 at 2016-06-20 18:40:49 +1000
+Processing by ProfilesController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (0.4ms)[0m  [1mSELECT  "profiles".* FROM "profiles" WHERE "profiles"."id" = $1 LIMIT 1[0m  [["id", 15]]
+  Rendered profiles/show.html.erb within layouts/application (1.2ms)
+  Rendered layouts/_navbar.html.erb (0.0ms)
+Completed 200 OK in 56ms (Views: 52.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/profiles" for ::1 at 2016-06-20 18:40:52 +1000
+Processing by ProfilesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36mProfile Load (0.4ms)[0m  [1mSELECT "profiles".* FROM "profiles"[0m
+  Rendered profiles/index.html.erb within layouts/application (3.4ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 67ms (Views: 64.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/charges/new" for ::1 at 2016-06-20 18:40:53 +1000
+Processing by ChargesController#new as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered charges/new.html.erb within layouts/charges (1.5ms)
+Completed 200 OK in 44ms (Views: 41.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/charges/new" for ::1 at 2016-06-20 18:40:54 +1000
+Processing by ChargesController#new as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered charges/new.html.erb within layouts/charges (0.8ms)
+Completed 200 OK in 5ms (Views: 3.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/charges" for ::1 at 2016-06-20 18:41:15 +1000
+Processing by ChargesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dva5VkNLdziJikM+un9aSmZreM8kAn+4nLtCcOGbN52XaLbvIWUp2F6y26BvLdYOG2zDx7Kiiqzb6FG0O6+K9A==", "stripeToken"=>"tok_18ONy0Ep8ChXHb1uIPOSQjuv", "stripeTokenType"=>"card", "stripeEmail"=>"sheena.takkenberg@gmail.com"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered charges/create.html.erb within layouts/charges (0.9ms)
+Completed 200 OK in 2730ms (Views: 13.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profiles" for ::1 at 2016-06-20 18:41:19 +1000
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mProfile Load (0.5ms)[0m  SELECT "profiles".* FROM "profiles"
+  Rendered profiles/index.html.erb within layouts/application (4.9ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 65ms (Views: 61.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/home/index" for ::1 at 2016-06-20 18:41:25 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_navbar.html.erb (0.1ms)
+Completed 200 OK in 67ms (Views: 64.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/home/index" for ::1 at 2016-06-20 18:42:54 +1000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.6ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_navbar.html.erb (2.4ms)
+Completed 200 OK in 153ms (Views: 131.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-32c7487f3cd0402571edb6d3213020e6a925696af78b1d861137704486fceca2.css?body=1" for ::1 at 2016-06-20 18:42:54 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-06-20 18:42:55 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-06-20 18:42:55 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-20 18:42:55 +1000
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-06-20 18:42:55 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-06-20 18:42:55 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-06-20 18:42:55 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-06-20 18:42:55 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-06-20 18:42:55 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-06-20 18:42:55 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-06-20 18:42:55 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-06-20 18:42:55 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-06-20 18:42:55 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-06-20 18:42:55 +1000
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-20 18:42:55 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-20 18:42:55 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-06-20 18:42:55 +1000
+
+
+Started GET "/assets/charges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-20 18:42:55 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-20 18:42:55 +1000
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-20 18:42:55 +1000
+
+
+Started GET "/assets/searches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-20 18:42:55 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-06-20 18:42:55 +1000
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-06-20 18:42:57 +1000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"DjZeMiB0lvd3QHLslFvSRLa61TG3YjI7pjmFvm+3/RjvqFGLQlrIF6B46nJBCV4Ay71uOSHCxy/hapZ6tYNAcQ=="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (1.2ms)[0m  BEGIN
+  [1m[36m (0.2ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 16ms (ActiveRecord: 1.6ms)
+
+
+Started GET "/" for ::1 at 2016-06-20 18:42:57 +1000
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 4ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-06-20 18:42:57 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/sheenatakkenberg/.rvm/gems/ruby-2.3.0@rails-426/gems/devise-4.1.1/app/views/devise/shared/_links.html.erb (2.1ms)
+  Rendered /Users/sheenatakkenberg/.rvm/gems/ruby-2.3.0@rails-426/gems/devise-4.1.1/app/views/devise/sessions/new.html.erb within layouts/application (43.2ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 165ms (Views: 152.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-06-20 18:43:06 +1000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jB9pXz6XF9e5Cew1iZK59OtfnNvGj1aFBbjukMuAQj6KjRaYtQwaHMhsqC26Rn6Zp2TIZsISMVUyHp8g263Dug==", "user"=>{"email"=>"sheena@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (5.9ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "sheena@email.com"]]
+  [1m[36m (0.2ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (10.3ms)[0m  UPDATE "users" SET "current_sign_in_at" = $1, "sign_in_count" = $2 WHERE "users"."id" = $3  [["current_sign_in_at", "2016-06-20 08:43:06.408375"], ["sign_in_count", 2], ["id", 1]]
+  [1m[36m (2.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 299ms (ActiveRecord: 18.5ms)
+
+
+Started GET "/" for ::1 at 2016-06-20 18:43:06 +1000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (1.1ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 83ms (Views: 79.3ms | ActiveRecord: 0.3ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-06-20 18:43:16 +1000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"GAeYJBb7BHyHMUNEXlmWMU75gSnhDYTmMMymOjXpkcMHpg5cdE8rJXrYmAKz9Y0kU/3WOIFQfNC3KUU4Azx52Q=="}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36m (0.1ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-06-20 18:43:16 +1000
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-06-20 18:43:16 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/sheenatakkenberg/.rvm/gems/ruby-2.3.0@rails-426/gems/devise-4.1.1/app/views/devise/shared/_links.html.erb (0.6ms)
+  Rendered /Users/sheenatakkenberg/.rvm/gems/ruby-2.3.0@rails-426/gems/devise-4.1.1/app/views/devise/sessions/new.html.erb within layouts/application (5.4ms)
+  Rendered layouts/_navbar.html.erb (0.4ms)
+Completed 200 OK in 77ms (Views: 76.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-06-20 18:43:23 +1000
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-06-20 18:43:23 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/sheenatakkenberg/.rvm/gems/ruby-2.3.0@rails-426/gems/devise-4.1.1/app/views/devise/shared/_links.html.erb (0.3ms)
+  Rendered /Users/sheenatakkenberg/.rvm/gems/ruby-2.3.0@rails-426/gems/devise-4.1.1/app/views/devise/sessions/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navbar.html.erb (0.3ms)
+Completed 200 OK in 59ms (Views: 57.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-06-20 18:46:10 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/sheenatakkenberg/.rvm/gems/ruby-2.3.0@rails-426/gems/devise-4.1.1/app/views/devise/shared/_links.html.erb (0.3ms)
+  Rendered /Users/sheenatakkenberg/.rvm/gems/ruby-2.3.0@rails-426/gems/devise-4.1.1/app/views/devise/sessions/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navbar.html.erb (1.6ms)
+Completed 200 OK in 92ms (Views: 90.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-32c7487f3cd0402571edb6d3213020e6a925696af78b1d861137704486fceca2.css?body=1" for ::1 at 2016-06-20 18:46:10 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-20 18:46:10 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-06-20 18:46:10 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-06-20 18:46:10 +1000
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-06-20 18:46:10 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-06-20 18:46:10 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-06-20 18:46:10 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-06-20 18:46:10 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-06-20 18:46:10 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-06-20 18:46:10 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-06-20 18:46:10 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-06-20 18:46:10 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-06-20 18:46:10 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-06-20 18:46:10 +1000
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-20 18:46:10 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-20 18:46:10 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-06-20 18:46:10 +1000
+
+
+Started GET "/assets/charges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-20 18:46:10 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-20 18:46:10 +1000
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-20 18:46:10 +1000
+
+
+Started GET "/assets/searches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-20 18:46:10 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-06-20 18:46:10 +1000
+
+
+Started GET "/users/sign_in" for ::1 at 2016-06-20 18:46:38 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/sheenatakkenberg/.rvm/gems/ruby-2.3.0@rails-426/gems/devise-4.1.1/app/views/devise/shared/_links.html.erb (0.5ms)
+  Rendered /Users/sheenatakkenberg/.rvm/gems/ruby-2.3.0@rails-426/gems/devise-4.1.1/app/views/devise/sessions/new.html.erb within layouts/application (14.5ms)
+  Rendered layouts/_navbar.html.erb (1.1ms)
+Completed 200 OK in 84ms (Views: 82.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-20 18:46:38 +1000
+
+
+Started GET "/assets/application.self-32c7487f3cd0402571edb6d3213020e6a925696af78b1d861137704486fceca2.css?body=1" for ::1 at 2016-06-20 18:46:38 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-06-20 18:46:38 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-06-20 18:46:38 +1000
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-06-20 18:46:38 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-06-20 18:46:38 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-06-20 18:46:38 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-06-20 18:46:38 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-06-20 18:46:38 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-06-20 18:46:38 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-06-20 18:46:38 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-06-20 18:46:38 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-06-20 18:46:38 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-06-20 18:46:38 +1000
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-20 18:46:38 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-20 18:46:38 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-06-20 18:46:38 +1000
+
+
+Started GET "/assets/charges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-20 18:46:38 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-20 18:46:38 +1000
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-20 18:46:38 +1000
+
+
+Started GET "/assets/searches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-20 18:46:38 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-06-20 18:46:38 +1000
+
+
+Started GET "/users/sign_in" for ::1 at 2016-06-20 18:47:19 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/sheenatakkenberg/.rvm/gems/ruby-2.3.0@rails-426/gems/devise-4.1.1/app/views/devise/shared/_links.html.erb (0.5ms)
+  Rendered /Users/sheenatakkenberg/.rvm/gems/ruby-2.3.0@rails-426/gems/devise-4.1.1/app/views/devise/sessions/new.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navbar.html.erb (1.6ms)
+Completed 200 OK in 69ms (Views: 67.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-32c7487f3cd0402571edb6d3213020e6a925696af78b1d861137704486fceca2.css?body=1" for ::1 at 2016-06-20 18:47:19 +1000
+
+
+Started GET "/assets/jquery.self-660adc51e0224b731d29f575a6f1ec167ba08ad06ed5deca4f1e8654c135bf4c.js?body=1" for ::1 at 2016-06-20 18:47:19 +1000
+
+
+Started GET "/assets/bootstrap/affix.self-3555752f8a930795ee9e56751a52e6871104ae85d01b3ab8363da3802a5ecc78.js?body=1" for ::1 at 2016-06-20 18:47:19 +1000
+
+
+Started GET "/assets/bootstrap/button.self-e74d33ba39500940a78d6fa4d2d64f6ca7fd86d60a2149641f7fde7ba711d8a1.js?body=1" for ::1 at 2016-06-20 18:47:19 +1000
+
+
+Started GET "/assets/bootstrap/collapse.self-056c40532d9f0f126ec17e839f60c942f573fbd61a086e7f156306e3fc5e8c1f.js?body=1" for ::1 at 2016-06-20 18:47:19 +1000
+
+
+Started GET "/assets/bootstrap/alert.self-d8b7bd612b3dcfdefb7b5539b9d5848d66ccbd3e7af8bb8d48bfb3288aaa7be8.js?body=1" for ::1 at 2016-06-20 18:47:19 +1000
+
+
+Started GET "/assets/bootstrap/carousel.self-35d204878d906298e55bc24553e11fd89b980fc4ffe5792fe36af8c0da289c54.js?body=1" for ::1 at 2016-06-20 18:47:19 +1000
+
+
+Started GET "/assets/bootstrap/dropdown.self-e56c2ffee4618411d43ecf15c89273f6223847ad756e1cd17545d04afa732ed4.js?body=1" for ::1 at 2016-06-20 18:47:19 +1000
+
+
+Started GET "/assets/bootstrap/modal.self-62463080dba6b9d024ff0a3192da0e76eacbc683194f3395047c6f5cfa0acb59.js?body=1" for ::1 at 2016-06-20 18:47:19 +1000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-52afd90e8ba97d9f08617a13986e8869d6c4a45751c0bff59a6f91241e722aca.js?body=1" for ::1 at 2016-06-20 18:47:19 +1000
+
+
+Started GET "/assets/bootstrap/tab.self-dad0d5c377f9fae26394484535ebb23ccf68afae084f896af6ea4cdf8c9f6ae0.js?body=1" for ::1 at 2016-06-20 18:47:19 +1000
+
+
+Started GET "/assets/bootstrap/transition.self-3b268d4cd8c79e46ded7392885f72f64ffb5b0d49948a12b8cf9779f6163e13a.js?body=1" for ::1 at 2016-06-20 18:47:19 +1000
+
+
+Started GET "/assets/bootstrap/tooltip.self-facdc69246a072acb927ded77ff655f7c27a518b9357fddd45d119fbc8a0ab9f.js?body=1" for ::1 at 2016-06-20 18:47:19 +1000
+
+
+Started GET "/assets/bootstrap/popover.self-210cff1fb4b72b71a29b5122180cb5937c8145cd13a934dc838280f1d9607a3e.js?body=1" for ::1 at 2016-06-20 18:47:19 +1000
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for ::1 at 2016-06-20 18:47:19 +1000
+
+
+Started GET "/assets/jquery_ujs.self-e87806d0cf4489aeb1bb7288016024e8de67fd18db693fe026fe3907581e53cd.js?body=1" for ::1 at 2016-06-20 18:47:19 +1000
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-06-20 18:47:19 +1000
+
+
+Started GET "/assets/charges.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-20 18:47:19 +1000
+
+
+Started GET "/assets/home.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-20 18:47:19 +1000
+
+
+Started GET "/assets/profiles.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-20 18:47:19 +1000
+
+
+Started GET "/assets/searches.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-06-20 18:47:19 +1000
+
+
+Started GET "/assets/application.self-f8806224e027f3e3f0138ea9ce99319e298dfdb323304d1f1be6eae8e8c74724.js?body=1" for ::1 at 2016-06-20 18:47:19 +1000
+
+
+Started POST "/users/sign_in" for ::1 at 2016-06-20 18:47:31 +1000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"RCPT80/ihSHVY6weMLKJzDekE5qOCYSA0MvKlOyzXjR58mQnJnKjcCQb/a3b7EwMa8eq1ncx5+V42K9tfr6GAw==", "user"=>{"email"=>"sheena@email.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "sheena@email.com"]]
+  [1m[36m (0.3ms)[0m  [1mBEGIN[0m
+  [1m[35mSQL (0.7ms)[0m  UPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "sign_in_count" = $3 WHERE "users"."id" = $4  [["last_sign_in_at", "2016-06-20 08:43:06.408375"], ["current_sign_in_at", "2016-06-20 08:47:31.916385"], ["sign_in_count", 3], ["id", 1]]
+  [1m[36m (8.6ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 215ms (ActiveRecord: 10.3ms)
+
+
+Started GET "/" for ::1 at 2016-06-20 18:47:31 +1000
+Processing by HomeController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered home/index.html.erb within layouts/application (0.3ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 50ms (Views: 48.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profiles" for ::1 at 2016-06-20 18:48:02 +1000
+Processing by ProfilesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35mProfile Load (0.6ms)[0m  SELECT "profiles".* FROM "profiles"
+  Rendered profiles/index.html.erb within layouts/application (4.3ms)
+  Rendered layouts/_navbar.html.erb (0.6ms)
+Completed 200 OK in 57ms (Views: 54.9ms | ActiveRecord: 0.9ms)
+
+
+Started DELETE "/users/sign_out" for ::1 at 2016-06-20 19:16:28 +1000
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"UANQw9uF3YpwptSrPP9Sm+Xqz4Kb/KjMGjeXyncAnNv/BgNBqONbsbLkCL4Jgvcr57qimT1SHWijamgNPBWN/Q=="}
+  [1m[36mUser Load (6.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (1.9ms)[0m  BEGIN
+  [1m[36m (0.3ms)[0m  [1mCOMMIT[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 44ms (ActiveRecord: 8.9ms)
+
+
+Started GET "/" for ::1 at 2016-06-20 19:16:28 +1000
+Processing by HomeController#index as HTML
+Completed 401 Unauthorized in 1ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-06-20 19:16:28 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/sheenatakkenberg/.rvm/gems/ruby-2.3.0@rails-426/gems/devise-4.1.1/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /Users/sheenatakkenberg/.rvm/gems/ruby-2.3.0@rails-426/gems/devise-4.1.1/app/views/devise/sessions/new.html.erb within layouts/application (11.5ms)
+  Rendered layouts/_navbar.html.erb (0.8ms)
+Completed 200 OK in 174ms (Views: 171.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_in" for ::1 at 2016-06-20 19:16:29 +1000
+Processing by Devise::SessionsController#new as HTML
+  Rendered /Users/sheenatakkenberg/.rvm/gems/ruby-2.3.0@rails-426/gems/devise-4.1.1/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /Users/sheenatakkenberg/.rvm/gems/ruby-2.3.0@rails-426/gems/devise-4.1.1/app/views/devise/sessions/new.html.erb within layouts/application (4.4ms)
+  Rendered layouts/_navbar.html.erb (1.0ms)
+Completed 200 OK in 144ms (Views: 142.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-06-20 19:16:37 +1000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HeVvneJ027OaVJ5G+w0unRBFpUQocvRrXEEmxX5NGP1j0BjrevLefHwF1x8qhivOY5fz89JKJ87C8rwiWolU3Q==", "user"=>{"email"=>"sheena.takkenberg@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mUser Load (10.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["email", "sheena.takkenberg@gmail.com"]]
+Completed 401 Unauthorized in 13ms (ActiveRecord: 10.3ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HeVvneJ027OaVJ5G+w0unRBFpUQocvRrXEEmxX5NGP1j0BjrevLefHwF1x8qhivOY5fz89JKJ87C8rwiWolU3Q==", "user"=>{"email"=>"sheena.takkenberg@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /Users/sheenatakkenberg/.rvm/gems/ruby-2.3.0@rails-426/gems/devise-4.1.1/app/views/devise/shared/_links.html.erb (0.3ms)
+  Rendered /Users/sheenatakkenberg/.rvm/gems/ruby-2.3.0@rails-426/gems/devise-4.1.1/app/views/devise/sessions/new.html.erb within layouts/application (5.8ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 328ms (Views: 137.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users/sign_in" for ::1 at 2016-06-20 19:16:50 +1000
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8Y9ZEJI1HhV7LsMxsvXCwxdrQEy+P8j5yFNTsjksZm+Pui5mCrMb2p1/imhjfseQZLkW+0QHG1xW4MlVHegqTw==", "user"=>{"email"=>"sheena.takkenberg@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.7ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."email" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["email", "sheena.takkenberg@gmail.com"]]
+Completed 401 Unauthorized in 3ms (ActiveRecord: 0.7ms)
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"8Y9ZEJI1HhV7LsMxsvXCwxdrQEy+P8j5yFNTsjksZm+Pui5mCrMb2p1/imhjfseQZLkW+0QHG1xW4MlVHegqTw==", "user"=>{"email"=>"sheena.takkenberg@gmail.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  Rendered /Users/sheenatakkenberg/.rvm/gems/ruby-2.3.0@rails-426/gems/devise-4.1.1/app/views/devise/shared/_links.html.erb (0.6ms)
+  Rendered /Users/sheenatakkenberg/.rvm/gems/ruby-2.3.0@rails-426/gems/devise-4.1.1/app/views/devise/sessions/new.html.erb within layouts/application (5.2ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 284ms (Views: 95.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/users/sign_up" for ::1 at 2016-06-20 19:17:05 +1000
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /Users/sheenatakkenberg/.rvm/gems/ruby-2.3.0@rails-426/gems/devise-4.1.1/app/views/devise/shared/_links.html.erb (0.4ms)
+  Rendered /Users/sheenatakkenberg/.rvm/gems/ruby-2.3.0@rails-426/gems/devise-4.1.1/app/views/devise/registrations/new.html.erb within layouts/application (7.6ms)
+  Rendered layouts/_navbar.html.erb (0.5ms)
+Completed 200 OK in 102ms (Views: 100.1ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/users" for ::1 at 2016-06-20 19:17:16 +1000
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hSjX1zG6a3IZZLOUqnr91/lkYFZsEmc7ITdJPVlIJpP7HaChqTxuvf81+s178fiEirY24ZYqtJ6/hNPafYxqsw==", "user"=>{"email"=>"sheena.takkenberg@gmail.com", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mUser Exists (4.9ms)[0m  [1mSELECT  1 AS one FROM "users" WHERE "users"."email" = 'sheena.takkenberg@gmail.com' LIMIT 1[0m
+  [1m[35mSQL (12.9ms)[0m  INSERT INTO "users" ("email", "encrypted_password") VALUES ($1, $2) RETURNING "id"  [["email", "sheena.takkenberg@gmail.com"], ["encrypted_password", "$2a$11$3W/6c27OlQqjcEf8y2AvzOYGq07/CPw35oTVEO92r/BE.5Z5F1Doa"]]
+  [1m[36m (0.7ms)[0m  [1mCOMMIT[0m
+  [1m[35m (0.2ms)[0m  BEGIN
+  [1m[36mSQL (3.1ms)[0m  [1mUPDATE "users" SET "last_sign_in_at" = $1, "current_sign_in_at" = $2, "last_sign_in_ip" = $3, "current_sign_in_ip" = $4, "sign_in_count" = $5 WHERE "users"."id" = $6[0m  [["last_sign_in_at", "2016-06-20 09:17:17.209824"], ["current_sign_in_at", "2016-06-20 09:17:17.209824"], ["last_sign_in_ip", "::1/128"], ["current_sign_in_ip", "::1/128"], ["sign_in_count", 1], ["id", 2]]
+  [1m[35m (0.4ms)[0m  COMMIT
+Redirected to http://localhost:3000/
+Completed 302 Found in 299ms (ActiveRecord: 22.5ms)
+
+
+Started GET "/" for ::1 at 2016-06-20 19:17:17 +1000
+Processing by HomeController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1[0m  [["id", 2]]
+  Rendered home/index.html.erb within layouts/application (0.7ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 78ms (Views: 75.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/profiles" for ::1 at 2016-06-20 19:17:23 +1000
+Processing by ProfilesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT  "users".* FROM "users" WHERE "users"."id" = $1  ORDER BY "users"."id" ASC LIMIT 1  [["id", 2]]
+  [1m[36mProfile Load (0.6ms)[0m  [1mSELECT "profiles".* FROM "profiles"[0m
+  Rendered profiles/index.html.erb within layouts/application (4.6ms)
+  Rendered layouts/_navbar.html.erb (0.2ms)
+Completed 200 OK in 74ms (Views: 70.2ms | ActiveRecord: 0.9ms)

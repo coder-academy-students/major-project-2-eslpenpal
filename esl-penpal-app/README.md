@@ -1,9 +1,9 @@
 #ESL Penpal App
 
-##Aborted attempt: https://github.com/Sheena-Marie/penpalapp
+##App live on Heroku
+https://fierce-dawn-36681.herokuapp.com
 
-##Link to Code on Personal github
-https://github.com/Sheena-Marie/eslpenapp
+##Aborted attempt: https://github.com/Sheena-Marie/penpalapp
 
 ##Wireframes:
 https://project2-cfa-sheena.mybalsamiq.com/projects/esl-penpal-app/prototype/Landing%20Page?key=2a80392b8d7b4d0a0a8b30943b30a1896ca3b413
